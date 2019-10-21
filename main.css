@@ -1,0 +1,55 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  position: relative;
+  height: 110vh;
+  background-image: linear-gradient(#deb968, #67dbb8);
+}
+
+button {
+  background-color: #b49a62; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Verdana";
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.opener{
+  color: white;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Verdana";
+}
+
+.opener h1 {
+  margin: 0; 
+  padding-top: 45vh;
+  color: white;
+  vertical-align: middle;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: "Verdana";
+}
+
+svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  /* set height to pixels if you want angle to change with screen width */
+}
+
+
