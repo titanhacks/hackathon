@@ -1,55 +1,107 @@
 html, body {
   margin: 0; 
   padding: 0;
+  background-color: aliceblue;
   text-align: center;
 }
 
-header {
-  position: relative;
-  height: 110vh;
-  background-image: linear-gradient(#deb968, #67dbb8);
-}
-
-button {
-  background-color: #b49a62; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  font-size: 16px;
-  font-family: "Verdana";
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-.opener{
-  color: white;
-  vertical-align: middle;
-}
+p {
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 3vh;
+} 
 
 h1 {
-  font-size: 60px;
-  font-family: "Verdana";
-}
-
-.opener h1 {
-  margin: 0; 
-  padding-top: 45vh;
-  color: white;
-  vertical-align: middle;
-}
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10vh;
+} 
 
 h3 {
-  font-size: 20px;
-  font-family: "Verdana";
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 6vh;
+  margin: 4vw 25vw 4vw 25vw;
+} 
+
+h5 {
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4vh;  
+  color: grey;
+  margin: 4vw 25vw 4vw 25vw;
+} 
+
+header{
+  min-height: 11vh;
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
 }
 
-svg {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  /* set height to pixels if you want angle to change with screen width */
+footer{
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
 }
 
+.logo{
+  position: absolute; 
+  top: 1.5vh; 
+  left: 25vw; 
+  border: 0; 
+  width: 8vh; 
+  z-index: 999;
+}
 
+.top {
+  position: relative;
+  height: 60vh;
+  background-image: linear-gradient(#deb968, #67dbb8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.top h1{
+  color: white;
+}
+
+.top h5{
+  color: white;
+}
+
+.info p{
+  color: gray;
+  margin: 4vw 25vw 4vw 25vw;
+}
+
+.logistics{
+  background-color: lightgrey;
+}
+
+.faqs{
+  
+}
+
+.faqs h5{
+  margin: 2vh;
+}
+
+.sponsors{
+  background-color: lightgrey;
+}
+
+.judges{
+
+}
+
+.team{
+  background-color: lightgrey;
+}
