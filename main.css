@@ -1,7 +1,7 @@
 html, body {
   margin: 0; 
   padding: 0;
-  background-color: aliceblue;
+  background-color: white;
   text-align: center;
 }
 
@@ -9,7 +9,7 @@ p {
   font-family: 'BebasNeueRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 3vh;
+  font-size: 2.5vh;
 } 
 
 h1 {
@@ -17,6 +17,7 @@ h1 {
   font-weight: normal;
   font-style: normal;
   font-size: 10vh;
+  padding: 4vh 25vw 4vh 25vw;
 } 
 
 h3 {
@@ -24,20 +25,27 @@ h3 {
   font-weight: normal;
   font-style: normal;
   font-size: 6vh;
-  margin: 4vw 25vw 4vw 25vw;
+  padding: 4vh 25vw 4vh 25vw;
+} 
+
+h4 {
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4vh;  
+  margin: 4vh 25vw 4vh 25vw;
 } 
 
 h5 {
   font-family: 'BebasNeueRegular';
   font-weight: normal;
   font-style: normal;
-  font-size: 4vh;  
-  color: grey;
-  margin: 4vw 25vw 4vw 25vw;
+  font-size: 3.5vh;  
+  padding: 4vh 25vw 4vh 25vw;
 } 
 
 header{
-  min-height: 11vh;
+  min-height: 8vh;
   font-family: 'BebasNeueRegular';
   font-weight: normal;
   font-style: normal;
@@ -50,58 +58,82 @@ footer{
   text-align: center;
 }
 
-.logo{
-  position: absolute; 
-  top: 1.5vh; 
-  left: 25vw; 
-  border: 0; 
-  width: 8vh; 
-  z-index: 999;
-}
-
 .top {
   position: relative;
-  height: 60vh;
-  background-image: linear-gradient(#deb968, #67dbb8);
+  height: 100vh;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-.top h1{
-  color: white;
+.top .logo{
+  height: 40vh;
+  width: 44vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.top h5{
+.button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'BebasNeueRegular';
+}
+
+.top h1{
   color: white;
+  padding: 0px;
+}
+
+.top h4{
+  margin-top: 5vh;
+  color: white;
+  margin: 2vw 25vw 2vw 25vw;
 }
 
 .info p{
-  color: gray;
+  color: black;
   margin: 4vw 25vw 4vw 25vw;
 }
 
 .logistics{
-  background-color: lightgrey;
 }
 
 .faqs{
-  
 }
 
 .faqs h5{
-  margin: 2vh;
+  padding: 0;
+}
+
+.container{
+  padding: 2vh;
 }
 
 .sponsors{
-  background-color: lightgrey;
+}
+
+.sponsors h3{
+  color:black;
 }
 
 .judges{
-
 }
 
 .team{
-  background-color: lightgrey;
+
+}
+
+.team h3{
+  color:black;
 }
