@@ -72,6 +72,7 @@ header{
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
+  color: white;
 }
 
 footer{
@@ -80,6 +81,7 @@ footer{
   font-weight: normal;
   font-style: normal;
   text-align: center;
+  color: white;
 }
 
 .top {
@@ -102,16 +104,20 @@ footer{
   background-color: white;
   border: none;
   color: black;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 3px 2px;
+  margin: 2px 2px;
   margin-left: auto;
   margin-right: auto;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#home a {
+  font-size: 2.5vh;
 }
 
 .top h1{
