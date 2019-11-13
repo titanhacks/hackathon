@@ -181,7 +181,12 @@ footer{
 .sponsors{
 }
 
-.sponsors h3{
+.sponsor{
+  width: 20vw;
+}
+
+.sponsors .container{
+  padding: 0vh 0vh 5vh 0vh;
 }
 
 .judges{
