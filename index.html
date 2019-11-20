@@ -7,8 +7,7 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-            
+
         <link rel="stylesheet" type="text/css" href="./main.css"/>
 
         <link rel='icon' href='favicon.ico' type='image/x-icon'/>
@@ -16,17 +15,36 @@
         <title>TitanHacks</title>
     </head>
     <body>
-        <div class="topnav">
-            <a class="active" href="#Home">Info</a>
-            <a href = "./cn.html">中文</a>
-            <a href="#team">Team</a>
-            <a href="#judges">Judges</a>
-            <a href="#sponsors">Sponsors</a>
-            <a href="#schedule">Schedule</a>
-            <a href="#logistics">Logistics</a>
-            <a href="#faqs">FAQ</a>  
-        </div>
-    
+        <nav class="navbar navbar-toggleable-md navbar-dark topnav navbar-default">
+            <button class="navbar-toggler navbar-toggler-right ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href = "./cn.html">中文</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#judges">Judges</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#schedule">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#logistics">Logistics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faqs">FAQ</a>  
+                </li>
+              </ul>
+            </div>
+        </nav>
         <div class = "top">
             <img class="logo" src="./imgs/titan.png" alt="TitanHacks"/>
             <h1 class="title" >TitanHacks</h1>
@@ -134,5 +152,7 @@
         <footer>TitanHacks, event run by Titan Hack Club</footer>
         <footer>Fiscally sponsored by The Hack Foundation.
                 Nonprofit EIN: 81-2908499.</footer>
-    </body>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    </body>
 </html>

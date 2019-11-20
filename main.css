@@ -5,6 +5,15 @@ html, body {
   text-align: center;
 }
 
+.navbar-default {
+  background-color: rgba(0,0,0,0.0);
+  border-color: #000000;
+}
+
+.nav-item a{
+  font-size: 20px;
+}
+
 a
 {
   color: #ffffff;
