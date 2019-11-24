@@ -105,8 +105,13 @@ footer{
   font-weight: normal;
   font-style: normal;
   text-align: center;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   margin: 20px;
+}
+
+a, h1, h2, h3, h4, h5, li, p, span, footer {
+  font-family: Muli,Helvetica,Arial,sans-serif;
 }
 
 .top {
@@ -338,3 +343,24 @@ footer{
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#e6d093, #59c3b1); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#b8a676, #479c8e); 
+}
+
