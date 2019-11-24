@@ -118,6 +118,7 @@ footer{
   text-align: center;
 }
 
+
 #register {
   height: 20vh;
 }
@@ -130,9 +131,9 @@ footer{
 }
 
 .button {
-  background-color: rgb(131, 128, 128);
+  background-color: #fe4a49;
   border: none;
-  color: black;
+  color: white;
   padding: 15px;
   text-align: center;
   text-decoration: none;
@@ -226,6 +227,39 @@ footer{
 
 .team h5{
   padding: 0;
+}
+
+.col-sm h5{
+  padding: 0px;
+  margin: 0px;
+}
+
+.bronze{
+  color:#CD7F32;
+}
+
+.silver{
+  color: #c0c0c0;
+}
+
+.gold{
+  color: #ffd700;
+}
+
+.red{
+  color: #fe4a49;
+}
+
+.yellow{
+  color: #fed766;
+}
+
+.teal{
+  color: #59c2af;
+}
+
+.lightgrey{
+  color: #d9d9d9;
 }
 
 @keyframes move-twink-back {
