@@ -1,13 +1,28 @@
-html, body {
+html, body{
   margin: 0; 
   padding: 0;
-  background-image: url("./imgs/stars.jpg");
   text-align: center;
+  position: relative;
 }
 
+html{
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  overflow: auto;
+  z-index: 0;
+}
+
+.container{
+  z-index: 0;
+  background-color: rgba(0,0,0,0.0);
+}
 .navbar-default {
   background-color: rgba(0,0,0,0.0);
   border-color: #000000;
+  z-index: 100;
 }
 
 .nav-item a{
@@ -27,8 +42,8 @@ a:hover, a:active
 }
 
 p {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 2.5vh;
@@ -36,8 +51,8 @@ p {
 } 
 
 h1 {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 10vh;
@@ -46,8 +61,8 @@ h1 {
 } 
 
 h3 {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 6vh;
@@ -56,8 +71,8 @@ h3 {
 } 
 
 h4 {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 4vh;  
@@ -66,8 +81,8 @@ h4 {
 } 
 
 h5 {
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 3.5vh;  
@@ -77,20 +92,21 @@ h5 {
 
 header{
   min-height: 8vh;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: white;
 }
 
 footer{
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: normal;
   font-style: normal;
   text-align: center;
   color: white;
+  margin: 20px;
 }
 
 .top {
@@ -100,6 +116,10 @@ footer{
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+#register {
+  height: 20vh;
 }
 
 .top .logo{
@@ -121,8 +141,8 @@ footer{
   margin: 2px 2px;
   margin-left: auto;
   margin-right: auto;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   border-radius: 12px;
 }
 
@@ -138,11 +158,11 @@ footer{
 .top h4{
   margin-top: 5vh;
   color: white;
-  margin: 2vw 25vw 2vw 25vw;
+  margin: 2vw 0vw 2vw 0vw;
 }
 
 .info h4{
-  margin: 0vw 20vw 4vw 20vw;
+  margin: 0vw 0vw 4vw 0vw;
 }
 
 .topnav {
@@ -163,8 +183,8 @@ footer{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .logistics{
@@ -206,4 +226,81 @@ footer{
 
 .team h5{
   padding: 0;
+}
+
+@keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+  from {background-position:0 0;}
+  to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+  from {background-position: 0;}
+  to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index: -100;
+  position: fixed;
+}
+
+.twinkling{
+  position: fixed;
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:-99;
+  min-height: 100%;
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+  position: absolute;
+  min-height: 100px;
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+  z-index:50;
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
