@@ -280,6 +280,10 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
   color: #d9d9d9;
 }
 
+.blue{
+  color: #7289DA;
+}
+
 @keyframes move-twink-back {
   from {background-position:0 0;}
   to {background-position:-10000px 5000px;}
