@@ -163,6 +163,10 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
 #home a {
   font-size: 2.5vh;
 }
+#map{
+  height: 400px;
+  width: 100%;
+}
 
 .top h1{
   color: white;
@@ -231,6 +235,12 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
   width: 75%;
 }
 
+.center {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
 .judges{
 }
 
@@ -244,9 +254,16 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
 }
 
 .team h5{
-  padding: 0;
+  padding: 20px;
 }
 
+.team-title {
+  margin: auto;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .col-sm h5{
   padding: 0px;
   margin: 0px;

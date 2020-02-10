@@ -74,7 +74,7 @@
             </div>
             <div id ="info" class= "info">
                 <h4>
-                    Titanhacks is <span class = "yellow">a hackathon hosted in the sunny city of Los Angeles. </span>
+                    TitanHacks is <span class = "yellow">a hackathon hosted in the sunny city of Los Angeles. </span>
                     High school students from LA and beyond will come for the weekend and team up to <span class="red">build an app, game, or website.</span>
                     Workshops, games, and raffles mean <span class="yellow">fun for everyone</span> from the beginning programmer to the seasoned hackathon veteran.
                     After a day of hard work, judges will pick the best projects and give prizes. 
@@ -88,7 +88,106 @@
             
             <div id="location" class= "locationMap">
                 <h3>Location</h3>
-                <p>TBA!</p>
+                <div id="map"></div>
+                <script>
+                    
+            function initMap(){
+                var hub = {lat: 34.145134, lng: -118.805496};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom:17,
+                        styles: [
+            {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#263c3f'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#6b9a76'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#38414e'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#212a37'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#9ca5b3'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#746855'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#1f2835'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#f3d19c'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#2f3948'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#d59563'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#17263c'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#515c6d'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#17263c'}]
+            }
+          ] , center: hub});
+                var marker = new google.maps.Marker({posititon: hub, map: map, title:'We are here!', visible: true});
+                marker.setMap(map);
+                marker.addListener('click', toggleBounce);
+                
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+            }
+            }
+                </script>
                 <!-- <p>Venue Location: </p> -->
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.743386859851!2d-118.21230308485887!3d34.127318680585596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c166252332a1%3A0xb7b5326ed6e158a6!2sOccidental%20College!5e0!3m2!1sen!2sus!4v1580853140643!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->                
 
@@ -334,7 +433,13 @@
                         <div class="col-sm">
                             <a href="https://github.com/"  class="sponsor-container" target="_blank"><img class="sponsor" src="./imgs/github.png" alt = "GitHub"></a>
                         </div>
-                    </div>                    <div class="row">
+                    </div>
+                    <div class="row">
+                        <div class="col=sm">
+                            <a href="http://www.hub101.la/" class="sponsor-container" target="_blank"><img class="center" src="./imgs/hub.png" alt = "Hub101" style="width:70%;" style="height:80%;"></a>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-sm">
                             <a href="https://voiceflow.com" class="sponsor-container" target="_blank"><img class="sponsor" src="./imgs/voiceflow.png" alt = "Voiceflow"></a>
                         </div>
@@ -365,7 +470,16 @@
                             <a href="https://www.adafruit.com/" class="sponsor-container" target="_blank"><img class="sponsor" src="./imgs/adafruit.png" alt= "Adafruit Industries"style="width:60%;" style="height:80%;"></a>
                         </div>
                         <div class = "col-sm">
-                            <a href="https://cloudsploit.com/events" class="sponsor-container" target="_blank"><img class ="sponsor" src="./imgs/cloudspoit.png" alt= "Cloudspoit" style="width:70%;" style="height:80%;"></a>
+                            <a href="https://cloudsploit.com/events" class="sponsor-container" target="_blank"><img class ="sponsor" src="./imgs/cloudspoit.png" alt= "CloudSpoit" style="width:70%;" style="height:80%;"></a>
+                        </div>
+                    </div>
+        
+                    <div class="row">
+                        <div class = "col-sm">
+                            <a href="https://www.hyperxgaming.com/us" class="sponsor-container" target="_blank"><img class="sponsor" src="./imgs/hyperx.png" alt = "Hyperx Gaming"style="width:40%;" style="height:40%;"></a>
+                        </div>
+                        <div class = "col-sm">
+                            <a href="https://www.rmdslab.com/" class="sponsor-container" target="_blank"><img class="sponsor" src="./imgs/rmdslogo.png" alt = "RMDS Lab"style="width:40%;" style="height:40%;"></a>
                         </div>
                     </div>
                 <p>If you're interested in having your company's logo here, <a href='mailto:info@titanhacks.net'>email us</a>!</p>
@@ -374,27 +488,33 @@
                 <h3>Judges</h3>
                 <p>Coming soon!</p>
             </div>
-            <div id="team" class= "team">
+            <div id="team" class= "team-title">
                 <h3>Our Team</h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
                             <h5>Matthew Lee</h5>
                             <p></p>
-                            <p>Director of Finance</p>
+                            <p>Finance</p>
                             <p><a href="https://matthewlee.xyz/" target="_blank">Website</a></p>
                         </div>
                         <div class="col-sm">
                             <h5>Jeff Wang</h5>
                             <p></p>
-                            <p>Director of Events</p>
+                            <p>Events</p>
                             <p><a href="https://jeff-d-wang.github.io/" target="_blank">Website</a></p>             
                         </div>
                         <div class="col-sm">
                             <h5>Jeffrey Deng</h5>
                             <p></p>
-                            <p>Director of Outreach</p>
+                            <p>Outreach</p>
                             <p><a href="https://www.bat-kryptonyte.tech/" target="_blank">Website</a></p>
+                        </div>
+                        <div class="col-sm">
+                            <h5>Ben Guo</h5>
+                            <p></p>
+                            <p>Technology</p>
+                            <p><a href="https://benguo2003.github.io/" target="_blank">Website</a></p>
                         </div>
                     </div>
                 </div>
@@ -411,6 +531,8 @@
             <p>Fiscally sponsored by The Hack Foundation.
                 Nonprofit EIN: 81-2908499.</p>
         </footer>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTxtzcR8cCndMX-Cw3nuNyeQtwWPn4EI&callback=initMap"
+  type="text/javascript"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
