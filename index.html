@@ -88,7 +88,16 @@
             
             <div id="location" class= "locationMap">
                 <h3>Location</h3>
-                <p>TBA!</p>
+                <div id="map"></div>
+                <script>
+                    
+            function initMap(){
+                var hub = {lat: 34.145134, lng: -118.805496};
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom:17, center: hub});
+                var marker = new google.maps.Marker({posititon: hub, map: map});
+            }
+                </script>
                 <!-- <p>Venue Location: </p> -->
                 <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.743386859851!2d-118.21230308485887!3d34.127318680585596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c166252332a1%3A0xb7b5326ed6e158a6!2sOccidental%20College!5e0!3m2!1sen!2sus!4v1580853140643!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->                
 
@@ -336,6 +345,11 @@
                             <a href="https://github.com/"  class="sponsor-container" target="_blank"><img class="sponsor" src="./imgs/github.png" alt = "GitHub"></a>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col=sm">
+                            <a href="http://www.hub101.la/" class="sponsor-container" target="_blank"><img class="center" src="./imgs/hub.png" alt = "Hub101" style="width:70%;" style="height:80%;"></a>
+                        </div>
+                    </div>
                     <h4><span class ="community">Community</span></h4>
                     <div class="row">
                         <div class="col-sm">
@@ -386,8 +400,8 @@
                 <h3>Judges</h3>
                 <p>Coming soon!</p>
             </div>
-            <div id="team" class= "team">
-                <h3>The TitanHacks Team</h3>
+            <div id="team" class= "team-title">
+                <h3>Our Team</h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm">
@@ -429,6 +443,8 @@
             <p>Fiscally sponsored by The Hack Foundation.
                 Nonprofit EIN: 81-2908499.</p>
         </footer>
+          <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQTxtzcR8cCndMX-Cw3nuNyeQtwWPn4EI&callback=initMap"
+  type="text/javascript"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
