@@ -175,7 +175,17 @@
               stylers: [{color: '#17263c'}]
             }
           ] , center: hub});
-                var marker = new google.maps.Marker({posititon: hub, map: map});
+                var marker = new google.maps.Marker({posititon: hub, map: map, title:'We are here!', visible: true});
+                marker.setMap(map);
+                marker.addListener('click', toggleBounce);
+                
+function toggleBounce() {
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+            }
             }
                 </script>
                 <!-- <p>Venue Location: </p> -->
