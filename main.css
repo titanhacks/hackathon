@@ -278,6 +278,16 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
   border-radius: 50%;
 }
 
+.notice {
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4vh;  
+  margin: 4vh;
+  color: white;
+} 
+
 .bronze{
   color:#CD7F32;
 }
