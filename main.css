@@ -147,8 +147,42 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
   margin-right: auto;
 }
 
-.button {
+.signUpButton {
   background-color: #fe4a49;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vh;
+  margin: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  border-radius: 12px;
+}
+
+.discordButton {
+  background-color: #7289DA;
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 3vh;
+  margin: 2px 2px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  border-radius: 12px;
+}
+
+.devPostButton {
+  background-color: #0B3E53;
   border: none;
   color: white;
   padding: 15px;
