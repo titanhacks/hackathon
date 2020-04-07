@@ -80,6 +80,31 @@
                 <a class="signUpButton" href="./register.html" style="text-decoration: none;">Sign up!</a>
                 <a href="./coronavirus.html">Notice on Coronavirus</a>
             </div>
+            <div id = "info" class = "info">
+                <h4 id="demo"></h4>
+
+                <script>
+                    
+                var countDownDate = new Date("April 11, 2020 9:00:00").getTime();
+                var x = setInterval(function() {
+
+                    var now = new Date().getTime();
+
+                    var distance = countDownDate - now;
+
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    document.getElementById("demo").innerHTML = days + " Days " + hours + "h "+ minutes + "m " + seconds + "s " + " Until Event Kickoff";
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "EXPIRED";
+                    }
+                }, 1000);
+                </script>
+            </div>
+            
             <div id ="info" class= "info">
                 <h4>
                     TitanHacks is <span class = "yellow">a hackathon hosted online. </span>
@@ -265,6 +290,18 @@ function toggleBounce() {
                             <p>Nothing since it's online! If you are making a hardware hack, please make sure you have the tools you need as we cannot provide.</p>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <h5>What are the themes?</h5>
+                            <p></p>
+                            <p>There will be four verticals in total. One of them is hardware. Inorder to prevent cheating, the other three will be announced during the opening ceremony.</p>
+                        </div>
+                        <div class="col-sm">
+                            <h5>Where is the opening/ending ceremony and workshops held?</h5>
+                            <p></p>
+                            <p>The opening/ending ceremony will be held on a streaming platform (TBD) and workshops on Zoom. Details can be found in our Discord during the event.</p>
+                        </div>
+                    </div>
                 </div>
             </div> -->
             <!--
@@ -276,6 +313,7 @@ function toggleBounce() {
             <div id="schedule" class= "schedule">
                 <h3><span class = "yellow">Schedule</span></h3>
                 <h2><span class = "red">PST (Pacific Standard Time)</span></h2>
+                <h2><span class = "silver">More workshops to come!</span></h2>
                 <div class="row">
                     <div class="col-xs-12">
                     </div>
@@ -295,7 +333,7 @@ function toggleBounce() {
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <p>09:00 AM</p>
+                        <p>9:00 AM</p>
                     </div>
                     <div class="col-sm">
                         <p>Stream starts</p>
@@ -355,7 +393,7 @@ function toggleBounce() {
                         <p></p>
                     </div>
                     <div class="col-sm">
-                        <p>12:00 AM</p>
+                        <p>12:00 PM</p>
                     </div>
                     <div class="col-sm">
                         <p>Event Conclusion</p>
@@ -503,7 +541,6 @@ function toggleBounce() {
                             <h5><span class = "teal">Scott Ulrich</span></h5>
                             <p></p>
                             <p>Design</p>
-                            <p>Website</p>
                         </div>
                     </div>
                 </div>
