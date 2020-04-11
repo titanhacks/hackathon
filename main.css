@@ -400,6 +400,13 @@ a, h1, h2, h3, h4, h5, li, p, span, footer {
   display:block;
 }
 
+.image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
 .stars {
   background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
   z-index: -100;
