@@ -10305,9 +10305,9 @@ body {
   }
 }
 
-.signup-section {
+.team-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-team.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10367,7 +10367,7 @@ body {
 }
 
 .logo{
-  max-width: 350px;
+  max-width: 250px;
 }
 .card img {
   max-width: 70%;
