@@ -10369,6 +10369,6 @@ body {
 .logo{
   max-width: 350px;
 }
-.sponsor-container img {
-  max-width: 170px;
+.card img {
+  max-width: 70%;
 }
